@@ -15,9 +15,10 @@ namespace PaymentGateway.Controllers
         {
             if (ModelState.IsValid)
             {
-                // query to create entry in object, in this scenario i am just created a new object
+                // query to create entry in object, in this scenario i am just creating a new object
                 var PaymentService = new PaymentService();
                 var result = PaymentService.CreateDatabaseTransaction(Transaction);
+                
                 // Log result
                 return Request.CreateResponse(HttpStatusCode.OK, result);
             }
@@ -28,6 +29,7 @@ namespace PaymentGateway.Controllers
         {
             var PaymentService = new PaymentService();
             var result = PaymentService.GetTransactionDetails(TransactionId);
+            
             //Log Result
             return Request.CreateResponse(HttpStatusCode.OK, result);
         }        
