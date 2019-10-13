@@ -12,7 +12,7 @@ namespace PaymentTransactions
     {
         public TransactionsResultModel CreateDatabaseTransaction(PaymentTransactionModel transaction)
         {
-
+            return new TransactionsResultModel();
         }
     }
 }

@@ -11,16 +11,17 @@ namespace PaymentGateway.Controllers
 {
     public class PaymentController : ApiController
     {
-        public void Process([FromBody] PaymentTransactionModel Transaction)
+        public HttpResponseMessage Process([FromBody] PaymentTransactionModel Transaction)
         {
             if (ModelState.IsValid)
             {
                 // query to create entry in object, in this scenario i am just created a new object
                 var PaymentService = new PaymentTransactions.PaymentTransactions();
-                var result = PaymentService.CreateDatabaseTransaction();
-                
-                
+                var result = PaymentService.CreateDatabaseTransaction(Transaction);
+
+                return Request.CreateResponse(HttpStatusCode.OK, result);
             }
+            return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Wrong Parameters Passed!");
         }
     }
 }
