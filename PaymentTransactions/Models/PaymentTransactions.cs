@@ -14,5 +14,10 @@ namespace PaymentTransactions
         {
             return new TransactionsResultModel();
         }
+
+        public object GetTransactionDetails(string transactionId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

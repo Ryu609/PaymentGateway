@@ -23,5 +23,13 @@ namespace PaymentGateway.Controllers
             }
             return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Wrong Parameters Passed!");
         }
+
+        public HttpResponseMessage GetDetails(string TransactionId)
+        {
+            var PaymentService = new PaymentTransactions.PaymentTransactions();
+            var result = PaymentService.GetTransactionDetails(TransactionId);
+            return Request.CreateResponse(HttpStatusCode.OK, result);
+        }
+        
     }
 }
