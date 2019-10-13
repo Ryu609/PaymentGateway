@@ -16,9 +16,9 @@ namespace PaymentGateway.Controllers
             if (ModelState.IsValid)
             {
                 // query to create entry in object, in this scenario i am just created a new object
-                var PaymentService = new PaymentTransactions.PaymentTransactions();
+                var PaymentService = new PaymentService();
                 var result = PaymentService.CreateDatabaseTransaction(Transaction);
-
+                // Log result
                 return Request.CreateResponse(HttpStatusCode.OK, result);
             }
             return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "Wrong Parameters Passed!");
@@ -26,10 +26,10 @@ namespace PaymentGateway.Controllers
 
         public HttpResponseMessage GetDetails(string TransactionId)
         {
-            var PaymentService = new PaymentTransactions.PaymentTransactions();
+            var PaymentService = new PaymentService();
             var result = PaymentService.GetTransactionDetails(TransactionId);
+            //Log Result
             return Request.CreateResponse(HttpStatusCode.OK, result);
-        }
-        
+        }        
     }
 }

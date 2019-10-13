@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\PaymentTransactionModel.cs" />
-    <Compile Include="Models\PaymentTransactions.cs" />
+    <Compile Include="PaymentService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResultsModel\TransactionsResultModel.cs" />
   </ItemGroup>

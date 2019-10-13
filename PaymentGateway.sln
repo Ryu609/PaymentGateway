@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentGateway", "PaymentGateway\PaymentGateway.csproj", "{0739E3C9-88DB-4B26-9A22-1648E83C5B88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentTransactions", "PaymentTransactions\PaymentTransactions.csproj", "{0DBD2160-7919-4138-9FC8-154CCC9AEDA5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer", "PaymentTransactions\ServiceLayer.csproj", "{0DBD2160-7919-4138-9FC8-154CCC9AEDA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

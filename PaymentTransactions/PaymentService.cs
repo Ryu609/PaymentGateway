@@ -8,16 +8,20 @@ using System.Threading.Tasks;
 
 namespace PaymentTransactions
 {
-    public class PaymentTransactions
+    public class PaymentService
     {
         public TransactionsResultModel CreateDatabaseTransaction(PaymentTransactionModel transaction)
         {
+            //todo - mock create to transaction and communicate with bank api
             return new TransactionsResultModel();
+            //Include Try Catch
         }
 
         public object GetTransactionDetails(string transactionId)
         {
+            //todo - mock search transaction from database
             throw new NotImplementedException();
+            //Include Try Catch
         }
     }
 }
