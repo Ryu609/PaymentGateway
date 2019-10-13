@@ -19,6 +19,8 @@ namespace PaymentGateway.Controllers
                 var PaymentService = new PaymentService();
                 var result = PaymentService.CreateDatabaseTransaction(Transaction);
                 
+                
+
                 // Log result
                 return Request.CreateResponse(HttpStatusCode.OK, result);
             }

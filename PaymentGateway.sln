@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentGateway", "PaymentGa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer", "PaymentTransactions\ServiceLayer.csproj", "{0DBD2160-7919-4138-9FC8-154CCC9AEDA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankMock", "BankMock\BankMock.csproj", "{2D02D8CE-225E-40E0-8461-F959A0CB060F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0DBD2160-7919-4138-9FC8-154CCC9AEDA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DBD2160-7919-4138-9FC8-154CCC9AEDA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DBD2160-7919-4138-9FC8-154CCC9AEDA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D02D8CE-225E-40E0-8461-F959A0CB060F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D02D8CE-225E-40E0-8461-F959A0CB060F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D02D8CE-225E-40E0-8461-F959A0CB060F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D02D8CE-225E-40E0-8461-F959A0CB060F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

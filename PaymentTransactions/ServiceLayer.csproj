@@ -46,5 +46,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResultsModel\TransactionsResultModel.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BankMock\BankMock.csproj">
+      <Project>{2d02d8ce-225e-40e0-8461-f959a0cb060f}</Project>
+      <Name>BankMock</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
