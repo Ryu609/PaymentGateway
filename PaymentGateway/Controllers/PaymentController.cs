@@ -17,10 +17,8 @@ namespace PaymentGateway.Controllers
             {
                 // query to create entry in object, in this scenario i am just creating a new object
                 var PaymentService = new PaymentService();
-                var result = PaymentService.CreateDatabaseTransaction(Transaction);
+                var result = PaymentService.CreateDatabaseTransaction(Transaction);             
                 
-                
-
                 // Log result
                 return Request.CreateResponse(HttpStatusCode.OK, result);
             }
