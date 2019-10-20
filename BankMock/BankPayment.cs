@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace BankMock
 {
-    public class BankPayment : IBankPaymentInterface
+    public class BankPayment : IBankPayment
     {
-        public PaymentResult ProcessPayment()
+        public async Task<PaymentResult> ProcessPayment()
         {
+            await Task.Delay(1000);
             return new PaymentResult();
         }
     }
