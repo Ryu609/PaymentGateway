@@ -1,4 +1,5 @@
-﻿using PaymentTransactions;
+﻿using BankMock.Interfaces;
+using PaymentTransactions;
 using PaymentTransactions.Models;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace PaymentGateway.Controllers
 {
     public class PaymentController : ApiController
     {
-        public HttpResponseMessage Process([FromBody] PaymentTransaction Transaction)
+        public HttpResponseMessage Process([FromBody] IBankTransactions Transaction)
         {
             if (ModelState.IsValid)
             {

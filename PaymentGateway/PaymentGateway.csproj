@@ -171,6 +171,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BankMock\BankMock.csproj">
+      <Project>{2d02d8ce-225e-40e0-8461-f959a0cb060f}</Project>
+      <Name>BankMock</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PaymentTransactions\ServiceLayer.csproj">
       <Project>{0dbd2160-7919-4138-9fc8-154ccc9aeda5}</Project>
       <Name>ServiceLayer</Name>
