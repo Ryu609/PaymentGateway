@@ -1,4 +1,5 @@
-﻿using PaymentTransactions.Models;
+﻿using BankMock.Interfaces;
+using PaymentTransactions.Models;
 using PaymentTransactions.ResultsModel;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace PaymentTransactions
 {
     public class PaymentService
     {
-        public TransactionsResultModel CreateDatabaseTransaction(PaymentTransactionModel transaction)
+        public TransactionsResultModel CreateDatabaseTransaction(IBankTransactions transaction)
         {
             //todo - mock create to transaction and communicate with bank api
             //todo - connect to bank Api 

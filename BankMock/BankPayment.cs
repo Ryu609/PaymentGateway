@@ -9,7 +9,7 @@ namespace BankMock
 {
     public class BankPayment : IBankPayment
     {
-        public async Task<PaymentResult> ProcessPayment()
+        public async Task<PaymentResult> ProcessPayment(IBankTransactions transactions)
         {
             await Task.Delay(1000);
             return new PaymentResult();

@@ -9,6 +9,6 @@ namespace BankMock.Interfaces
 {
     public interface IBankPayment
     {
-         Task<PaymentResult> ProcessPayment();
+         Task<PaymentResult> ProcessPayment(IBankTransactions transactions);
     }
 }

@@ -11,7 +11,7 @@ namespace PaymentGateway.Controllers
 {
     public class PaymentController : ApiController
     {
-        public HttpResponseMessage Process([FromBody] PaymentTransactionModel Transaction)
+        public HttpResponseMessage Process([FromBody] PaymentTransaction Transaction)
         {
             if (ModelState.IsValid)
             {
