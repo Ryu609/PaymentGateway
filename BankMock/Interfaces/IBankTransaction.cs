@@ -8,5 +8,6 @@ namespace BankMock.Interfaces
 {
     public interface IBankTransactions
     {
-    }
+        
+    }   
 }

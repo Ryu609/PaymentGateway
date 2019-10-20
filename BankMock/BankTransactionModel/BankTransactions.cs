@@ -9,5 +9,6 @@ namespace BankMock.BankTransactionModel
 {
    public class BankTransactions : IBankTransactions
     {
-    }
+            
+    }   
 }

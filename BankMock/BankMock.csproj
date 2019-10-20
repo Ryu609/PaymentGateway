@@ -45,6 +45,7 @@
     <Compile Include="BankTransactionModel\BankTransactions.cs" />
     <Compile Include="Interfaces\IBankPayment.cs" />
     <Compile Include="Interfaces\IBankTransaction.cs" />
+    <Compile Include="Model\TransactionModel.cs" />
     <Compile Include="PaymentResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
