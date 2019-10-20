@@ -41,7 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\BankPaymentInterface.cs" />
+    <Compile Include="Interfaces\IBankPayment.cs" />
+    <Compile Include="Interfaces\IBankTransactions.cs" />
     <Compile Include="Models\PaymentTransactionModel.cs" />
     <Compile Include="PaymentService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

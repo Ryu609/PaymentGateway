@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PaymentTransactions.Interfaces
 {
-    public interface BankPaymentInterface
+    public interface IBankPayment
     {
         PaymentResult ProcessPayment();
     }

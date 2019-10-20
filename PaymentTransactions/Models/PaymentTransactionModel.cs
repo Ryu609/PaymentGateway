@@ -1,11 +1,13 @@
-﻿using System;
+﻿using PaymentTransactions.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
 namespace PaymentTransactions.Models
 {
-    public class PaymentTransactionModel
+    public class PaymentTransaction : IBankTransactions
+
     {
     }
 }

@@ -15,7 +15,7 @@ namespace PaymentTransactions
             //todo - mock create to transaction and communicate with bank api
             //todo - connect to bank Api 
             var bankmock = new BankMock.BankPayment();
-            var transactionResult = bankmock.ProcessPayment();
+            var transactionResult = bankmock.ProcessPayment(transaction);
 
             return new TransactionsResultModel();
             //Include Try Catch
